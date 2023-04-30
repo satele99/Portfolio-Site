@@ -6,26 +6,62 @@
   text-align: center;
   height: 100vh;
   background-image: url('./images/gradient-background.jpeg');
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .midsection {
   display: flex;
   justify-content: center;
   gap: 4rem;
-  height: 80%;
+  height: 60%;
+  width: 100%;
 }
 .footer {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  height: 20%;
-  background: #fff;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  /* background: #fff; */
 }
 header {
   position: relative;
   padding: 0 2rem;
   color: #fff;
   margin-bottom: 3rem;
+}
+.project-container {
+  height: 70%;
+  background-image: url('./images/gradient-background.jpeg');
+}
+.image-box {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.grid-project {
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 15%);
+  grid-template-rows: repeat(3, 40%);
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 4rem;
+  background-image: url('./images/gradient-background.jpeg');
+}
+.add-space {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+.what-i-know {
+  height: auto;
+  background-image: url('./images/gradient-background.jpeg');
+}
+.about_me {
+  height: 100%;
+  width: 40%;
+  color: #fff
 }
 .navbar {
   display: flex;
