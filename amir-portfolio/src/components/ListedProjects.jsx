@@ -13,7 +13,7 @@ export default function Listedprojects(props) {
             </div>
             <div style={{display: 'flex', gap: '2rem', justifyContent: 'center'}}>
                 <button class="btn btn-dark"> Live Link</button>
-                <button class="btn btn-dark">GitHub</button>
+                <button class="btn btn-dark"><a style={{textDecoration: 'none', color: '#fff'}} target="_blank" href={props.link}>My GitHub</a></button>
             </div>
         </div>
     )

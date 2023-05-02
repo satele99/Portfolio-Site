@@ -7,7 +7,6 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Projects from './pages/Projects';
 import Contacts from './pages/Contact';
 
 const container = document.getElementById('root');
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App/>
-  },
-  {
-    path: 'projects',
-    element: <Projects/>
   },
   {
     path: 'contacts',

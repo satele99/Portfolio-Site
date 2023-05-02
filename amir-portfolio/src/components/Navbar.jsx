@@ -18,7 +18,6 @@ export default function Navbar() {
                 </div>
                 <ul className='nav-links'>
                     <li><Link to={'/'}>Home</Link></li>
-                    <li><Link to={'/projects'}>Projects</Link></li>
                     <li><Link to={'/contacts'}>Contact</Link></li>
                 </ul>
                 <a href='#' class='action-btn'>Contact Me</a>
@@ -29,7 +28,6 @@ export default function Navbar() {
             </div>
             <div className="dropdown">
                 <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/projects'}>Projects</Link></li>
                 <li><Link to={'/contacts'}>Contact</Link></li>
                 <li><a href='#' class='action-btn'>Contact Me</a></li>
             </div>

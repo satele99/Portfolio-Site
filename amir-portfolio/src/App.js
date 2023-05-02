@@ -19,19 +19,23 @@ import ExpressLogo from './images/Expressjs.png'
 function App() {
   const projects = [{
     name: 'Tic-Tac-Toe',
-    desc: 'A complete game of tic tac toe versus the computer! Created using Vanilla Javascript and minimal HTML and CSS.'
+    desc: 'A complete game of tic tac toe versus the computer! Created using Vanilla Javascript and minimal HTML and CSS.',
+    link: 'https://github.com/satele99/tic-tac-toe-project'
   }, 
   {
     name: 'Book Archive',
-    desc: 'I put my knowledge to the test for the fist time, by creating an archive to store all the books I have or will have read.'
+    desc: 'I put my knowledge to the test for the fist time, by creating an archive to store all the books I have or will have read.',
+    link: 'https://github.com/satele99/library'
   }, 
   {
     name: 'Budget App',
-    desc: "My first react project! This app utilizes Redux for state management, and is connected to a postgres database via Sequelize!"
+    desc: "My first react project! This app utilizes Redux for state management, and is connected to a postgres database via Sequelize!",
+    link: 'https://github.com/satele99/react-expense-app'
   },
   {
     name: 'Social Media Clone',
-    desc: 'Second Full-Stack Project! THis was a group project that utilized React, Redux, Express.js, Sequelize, and Socket.io!'
+    desc: 'Second Full-Stack Project! THis was a group project that utilized React, Redux, Express.js, Sequelize, and Socket.io!',
+    link: 'https://github.com/olyviahix/Capstone-Project'
   } ]
   return (
     <div className="App">
@@ -40,13 +44,19 @@ function App() {
           <AboutMe/>
       </div>
       <div className='project-container'>
-        <h2 style={{fontWeight: 'bolder', marginTop: '5rem'}}>My Projects</h2>
+        <h2 style={{fontWeight: 'bolder', marginTop: '5rem', color: '#fff'}}>My Projects</h2>
         <div className='grid-project'>
-          {
-            projects.map((item, index) => (
-              <Listedprojects index={index} name={item.name} content={item.desc}/>
-            ))
-          }
+          <Container>
+            <Row>
+              {
+                projects.map((item, index) => (
+                  <Col>
+                    <Listedprojects index={index} name={item.name} content={item.desc} link={item.link}/>
+                  </Col>
+                ))
+              }
+            </Row>
+          </Container>
         </div>
       </div>
       <div className='what-i-know'>

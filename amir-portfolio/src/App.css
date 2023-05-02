@@ -40,9 +40,9 @@ header {
 }
 .grid-project {
   height: 70%;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 15%);
-  grid-template-rows: repeat(3, 40%);
+  grid-template-rows: repeat(3, 40%); */
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
