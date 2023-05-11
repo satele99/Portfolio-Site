@@ -20,7 +20,6 @@ export default function Navbar() {
                     <li><Link to={'/'}>Home</Link></li>
                     <li><Link to={'/contacts'}>Contact</Link></li>
                 </ul>
-                <a href='#' class='action-btn'>Contact Me</a>
                 <div className="toggle-btn" onClick={respToggle}>
                     <i class="bi bi-list"></i>
                     {/* <i class="bi bi-x-lg"></i> */}
@@ -29,7 +28,6 @@ export default function Navbar() {
             <div className="dropdown">
                 <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/contacts'}>Contact</Link></li>
-                <li><a href='#' class='action-btn'>Contact Me</a></li>
             </div>
         </header>
     )

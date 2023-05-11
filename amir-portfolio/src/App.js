@@ -20,22 +20,26 @@ function App() {
   const projects = [{
     name: 'Tic-Tac-Toe',
     desc: 'A complete game of tic tac toe versus the computer! Created using Vanilla Javascript and minimal HTML and CSS.',
-    link: 'https://github.com/satele99/tic-tac-toe-project'
+    gitLink: 'https://github.com/satele99/tic-tac-toe-project',
+    live: 'https://satele99.github.io/tic-tac-toe-project/'
   }, 
   {
     name: 'Book Archive',
     desc: 'I put my knowledge to the test for the fist time, by creating an archive to store all the books I have or will have read.',
-    link: 'https://github.com/satele99/library'
+    gitLink: 'https://github.com/satele99/library',
+    live: 'https://github.com/satele99/library'
   }, 
   {
     name: 'Budget App',
     desc: "My first react project! This app utilizes Redux for state management, and is connected to a postgres database via Sequelize!",
-    link: 'https://github.com/satele99/react-expense-app'
+    gitLink: 'https://github.com/satele99/react-expense-app',
+    live: 'https://github.com/satele99/react-expense-app'
   },
   {
     name: 'Social Media Clone',
     desc: 'Second Full-Stack Project! THis was a group project that utilized React, Redux, Express.js, Sequelize, and Socket.io!',
-    link: 'https://github.com/olyviahix/Capstone-Project'
+    gitLink: 'https://github.com/olyviahix/Capstone-Project', 
+    live: 'https://github.com/olyviahix/Capstone-Project'
   } ]
   return (
     <div className="App">
@@ -51,7 +55,7 @@ function App() {
               {
                 projects.map((item, index) => (
                   <Col>
-                    <Listedprojects index={index} name={item.name} content={item.desc} link={item.link}/>
+                    <Listedprojects index={index} name={item.name} content={item.desc} link={item.gitLink} live={item.live}/>
                   </Col>
                 ))
               }
@@ -62,22 +66,20 @@ function App() {
       <div className='what-i-know'>
       <Container className='add-space'>
         <Row>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={HTML}/></div></Col>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={CSS}/></div></Col>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={JavaS}/></div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={HTML}/>HTML</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={CSS}/>CSS</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={JavaS}/>Javascript</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={NodeLogo}/>Node.js</div></Col>
         </Row>
         <Row>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={NodeLogo}/></div></Col>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={ExpressLogo}/></div></Col>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={sqlLogo}/></div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={ExpressLogo}/>Express.js</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={sqlLogo}/>SQL</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={ReactLogo}/>React.js</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={ReduxLogo}/>Redux</div></Col>
         </Row>
         <Row>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={ReactLogo}/></div></Col>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={ReduxLogo}/></div></Col>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={SequelizeLogo}/></div></Col>
-        </Row>
-        <Row>
-          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={SocketLogo}/></div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={SequelizeLogo}/>Sequelize</div></Col>
+          <Col style={{display: 'flex', justifyContent: 'center'}}><div className='image-box'><img className='image-box' src={SocketLogo}/>Socket.io</div></Col>
         </Row>
       </Container>
       </div>

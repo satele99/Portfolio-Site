@@ -1,9 +1,8 @@
-import Card from 'react-bootstrap/Card';
-import CardHeader from 'react-bootstrap/esm/CardHeader';
+
 
 export default function Listedprojects(props) {
     return (
-        <div style={{borderRadius: '2em', background: '#fff', width: '250px', height: '250px'}}>
+        <div style={{borderRadius: '2em', background: '#fff', maxWidth: '250px', maxHeight: '250px'}}>
             <div style={{fontWeight: 'bolder'}}>
                 {props.index}
             </div>
@@ -12,7 +11,7 @@ export default function Listedprojects(props) {
                 <p>{props.content}</p>
             </div>
             <div style={{display: 'flex', gap: '2rem', justifyContent: 'center'}}>
-                <button class="btn btn-dark"> Live Link</button>
+                <button class="btn btn-dark"><a style={{textDecoration: 'none', color: '#fff'}} target="_blank" href={props.live}>Live Link</a></button>
                 <button class="btn btn-dark"><a style={{textDecoration: 'none', color: '#fff'}} target="_blank" href={props.link}>My GitHub</a></button>
             </div>
         </div>

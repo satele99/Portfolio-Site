@@ -16,7 +16,7 @@
   width: 100%;
 }
 .footer {
-  background: #111;
+  background-image: url('./images/gradient-background.jpeg');
   height: auto;
   width: 100vw;
   padding-top: 40px;
@@ -32,9 +32,10 @@ header {
   height: 70%;
   background-image: url('./images/gradient-background.jpeg');
 }
+
 .image-box {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   border-radius: 15px;
 }
